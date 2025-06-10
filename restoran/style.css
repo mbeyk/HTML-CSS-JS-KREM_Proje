@@ -1,0 +1,261 @@
+* {
+   
+    padding: 0;
+    background-color: #FFECD9;
+    
+}
+
+.krem{
+    color:brown
+    
+}
+
+.baslik{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.secim {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;    
+}
+
+.musteri:hover, .garson:hover, .mutfakPersoneli:hover, .yonetici :hover{
+    background-color: brown;  
+}
+
+
+.secim button{
+    height: 50px;
+    width: 90px;
+    border: 1px solid brown;
+    border-radius: 10px;
+}
+
+.secenekler{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+     transform: translateY(100px);  /* başlangıçta aşağıda */
+  opacity: 0;
+  animation: yukariCik 1s ease-out forwards;
+}
+
+@keyframes yukariCik {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.resim1{
+    position: relative;
+  left: -300px; /* başlangıçta solda */
+  opacity: 0;
+  animation: kaydir 1s ease-out forwards;
+  /* sayfa yüklenince otomatik başlar */
+
+}
+
+@keyframes kaydir {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.resim2{
+    margin-left: 800px;
+     transform: translateX(200px); /* sağa konumlandır */
+  opacity: 0;
+  animation: sagdanKaydir 1s ease-out forwards;
+
+}
+
+@keyframes sagdanKaydir {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.secenekler button{
+    height: 30px;
+    width: 90px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 40px;
+    gap: 20px;
+    transform: translateY(100px);  /* başlangıçta aşağıda */
+  opacity: 0;
+  animation: yukariCik 1s ease-out forwards;
+}
+@keyframes yukariCik {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1,h3, h5, button {
+    background-color: transparent;
+}
+
+h1,h3, h5{
+    margin-left: 10px;
+}
+
+.yemek1, .yemek2, .yemek3 {
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #FFECD9;
+}
+
+.sepetEkle{
+    margin-top: 5px;
+    margin-left: 35%;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid gray;
+}
+
+.sepetEkle:hover{
+    background-color: #FFECD9;
+}
+
+.sepeteGit{
+    margin-top: 40px;
+   float: right;
+   margin-right: 260px;
+   height: 30px;
+   width: 90px;
+   border: 3px solid brown;
+   border-radius: 5px;
+    
+}
+
+.sepetSayfası{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.sepetÖzeti{
+    background-color: #FFECD9;
+    color: brown;
+    border-radius: 10px;
+    border: 10px solid brown;
+    height: 150px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+
+
+.durumTakip{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.alindi, .hazirlaniyor, .hazir{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: #FFECD9;
+   height: 40px;
+   width: 90px;
+   border-radius: 15px;
+}
+
+.durumGüncelleme{
+    height: 30px;
+    margin-top: 40px;
+margin-left: 10px;
+border-radius: 5px;
+background-color: brown;
+color:bisque
+}
+
+.durumGüncelleme:hover{
+    background-color: darkgrey;
+}
+
+
+.gelenSipariş{
+    color: brown;
+}
+
+.alindiM, .hazirlaniyorM, .hazirM, .teslimEdildiM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: #FFECD9;
+   height: 100px;
+   width: 100px;
+   border-radius: 15px;
+}
+
+.hazirG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: #FFECD9;
+   height: 50px;
+   width: 100px;
+   border-radius: 15px;
+}
+
+.teslimEt{
+margin-top: 5px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid gray;
+}
+
+
+.ödemeSeceneği{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap:20px;
+}
+
+.onlineÖdeme, .nakit, .onay{
+    border: 1px solid brown;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.onlineÖdeme:hover, .nakit:hover, .onay:hover{
+    background-color: brown;
+}
+
